@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Henri M&uuml;hle</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/academicons.min.css"/>
+		<link rel="shortcut icon" type="image/png" href="images/geoseis.png"/>-->
+	</head>
+
+	<body class="is-preload">
+	<!-- Header -->
+		<header id="header">
+			<!--<div class="inner">
+				<a href="https://jpvantassel.github.io/research-website/" class="image avatar"><img src="images/headshot.jpg" alt="" /></a>
+				<h1><strong>Joseph P. Vantassel</strong>, non-invasive<br/>	seismic imaging researcher.<br/>
+			</div>-->
+		</header>
+
+	<!-- Main -->
+	<div id="main">
+		<h1 id="parent-fieldname-title" class="documentFirstHeading">
+			Code
+		</h1>
+		
+		<div id="content-core">
+        
+		<h2>Sage-Skripte</h2>
+
+		<ul class="list-highlight">
+			<li><a href="docs/sage/vertex_decomposability.sage">vertex_decomposability.sage</a> - enthält Funktionen um zu prüfen ob ein gegebener Simplizialkomplex eckenzerlegbar ist.</li>
+			<li><a href="docs/sage/parabolic_cataland.zip">parabolic_cataland.zip</a> - enthält Funktionen um parabolische Tamari-Verbände und verwandte Objekte zu konstruieren. (Hilfsdatei zu meinem Artikel über <a href="https://arxiv.org/abs/1809.01405">parabolische Tamari-Verbände</a>.)</li>
+			<li><a href="docs/sage/hurwitz.sage">hurwitz.sage</a> - enthält Funktionen um Faktorisierungs-Posets zu erzeugen und Hurwitz-Orbits endlich erzeugter Gruppen abzuleiten. (Hilfsdatei zu meinem Artikel mit V. Ripoll über den <a href="https://arxiv.org/abs/1710.02063">Zusammenhang von Faktorisierungs-Posets</a>.)</li>
+			<li><a href="docs/sage/sperner.sage">sperner.sage</a> - enthält Funktionen um nichtkreuzende Partitionenverbände in Sage zu importieren und Methoden rund um die Sperner-Eigenschaft. (Hilfsdatei zu meinem Artikel über <a href="http://link.springer.com/article/10.1007/s10801-016-0723-5">symmetrische Zerlegungen von nichtkreuzenden Partitionenverbänden</a>.)</li>
+			<li><a href="docs/sage/m_tamari_decomposition.sage">m_tamari_decomposition.sage</a> - enthält Funktionen um die Streifenzerlegung von m-Dyckpfaden durchzuführen, und einige Testmethoden rund um eine Vermutung, dass der m-Tamariverband isomorph zu einer Modifikation des Posets der Streifenzerlegungen der m-Dyckpfade unter komponentenweise Rotationsordnung ist.  (Hilfsdatei zu meinem Artikel mit M. Kallipoliti über <a href="http://www.sciencedirect.com/science/article/pii/S0196885815000573">m-Bedeckungsposets</a>.)</li>
+		</ul>
+
+		<h2>Gap3-Skripte</h2>
+		<ul class="list-highlight">
+			<li><a href="docs/gap/print_nc.gap">print_nc.gap</a> - enthält Funktionen um die Bedeckungsrelationen in einem nichtkreuzenden Partitionenverband einer irreduziblen, wohlerzeugten komplexen Spiegelungsgruppe auszugeben.</li>
+		</ul>
+
+		<h2>Einige Verbandsrepositorien</h2>
+		<ul class="list-highlight">
+			<li><a href="docs/gap/ncp.zip">ncp.zip</a> - ein Archiv, das einige nichtkreuzende Partitionenverbände enthält.  Genauer, die Dateien in diesem Archiv enthalten die Bedeckungsrelationen dieser Verbände.  Bislang enthalten sind die folgenden nichtkreuzenden Partitionenverbände die zu den folgenden Gruppen gehören:
+
+			<ul class="list-highlight">
+				<li>irreduzible reelle Spiegelungsgruppen vom Rang höchstens 8,</li>
+				<li>irreduzible wohlerzeugte nicht-reelle Ausnahmegruppen,</li>
+				<li>die Gruppen G(d,d,n) mit 3 ≤ d ≤ 8 und 3 ≤ n ≤ 6, sowie 3 ≤ d ≤ 6 und n=7.</li>
+			</ul>
+			</li>
+			<li><a href="docs/sage/lattices.zip">lattices.zip</a> - ein Archiv, das diverse Familien von Verbänden enthält:
+			<ul class="list-highlight">
+				<li>distributive Verbände der Ordnung ≤18</li>
+				<li>kongruenz-uniforme Verbände der Ordnung ≤13</li>
+				<li>extremale Verbände der Ordnung ≤12</li>
+				<li>links-modulare Verbände der Ordnung ≤12</li>
+				<li>schlanke Verbände der Ordnung ≤12</li>
+				<li>supremum-semidistributive Verbände der Ordnung ≤12</li>
+			</ul>
+			</li>
+		</ul>
+
+		<p>Dieses Archiv enthält auch ein Skript names init.sage, mit dessen Hilfe diese Verbände in Sage importiert werden können.  Dazu muss nur das Skript in Sage geladen werden und die funktion load_all(type) aufgerufen werden.  Der Parameter 'type' kann dabei einen der Werte 'distributive', 'congruence_uniform', 'extremal', left_modular', 'trim', 'join_semidistributive' annehmen, je nachdem welche Verbände geladen werden sollen.  Diese Funktion gibt ein Dictionary-Objekt zurück, das eine natürliche Zahl auf eine Liste aller Verbände dieser Ordnung abbildet.  (Natürlich nur, wenn die Verbände der gewünschten Art und Ordnung in dem Archiv enthalten sind.)</p>
+		</div>
+	</div>
+	</body>
+</html>
