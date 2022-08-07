@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConceptualSystem>
+  <Version MajorNumber="1" MinorNumber="0" />
+  <Contexts>
+    <Context Identifier="0" Type="Binary">
+      <Attributes>
+        <Attribute Identifier="0">
+          <Name>rAtt2</Name>
+        </Attribute>
+        <Attribute Identifier="1">
+          <Name>rAtt1</Name>
+        </Attribute>
+      </Attributes>
+      <Objects>
+        <Object>
+          <Name>SubRole</Name>
+          <Intent>
+            <HasAttribute AttributeIdentifier="0" AttributeValue="1.0" />
+            <HasAttribute AttributeIdentifier="1" AttributeValue="1.0" />
+          </Intent>
+        </Object>
+        <Object>
+          <Name>SuperRole</Name>
+          <Intent>
+            <HasAttribute AttributeIdentifier="1" AttributeValue="1.0" />
+          </Intent>
+        </Object>
+      </Objects>
+    </Context>
+  </Contexts>
+  <RecalculationPolicy Value="Clear" />
+  <Lattices />
+</ConceptualSystem>
+

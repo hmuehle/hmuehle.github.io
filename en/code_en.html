@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Henri M&uuml;hle</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body,h1 {font-family: "Raleway", Arial, sans-serif}
+			h1 {letter-spacing: 6px}
+			.w3-row-padding img {margin-bottom: 12px}
+		</style>	
+	</head>
+
+	<body class="is-preload">
+	<!-- Main -->
+	<div id="main"><table><tr><td width="20"></td><td>
+		<h1 id="parent-fieldname-title" class="documentFirstHeading" align="right">
+			Code
+		</h1>
+		
+		<div id="content-core">
+        
+		<h2>Sage Scripts</h2>
+			<ul class="list-highlight">
+				<li><a href="https://hmuehle.github.io/docs/sage/vertex_decomposability.sage" target="blank">vertex_decomposability.sage</a> - provides functions to check whether a given simplicial complex is vertex decomposable.</li>
+				<li><a href="https://hmuehle.github.io/docs/sage/parabolic_cataland.zip" class="download-link">parabolic_cataland.zip</a> - provides functions to construct parabolic Tamari lattices and related objects. (Accompanies my article on <a href="https://arxiv.org/abs/1809.01405" target="blank">parabolic Tamari lattices</a>.)</li>
+				<li><a href="https://hmuehle.github.io/docs/sage/hurwitz.sage" target="blank">hurwitz.sage</a> - provides functions to create factorization posets and deduce Hurwitz orbits in generated groups. (Accompanies my article with V. Ripoll on <a href="https://arxiv.org/abs/1710.02063" target="blank">connectivity of factorization posets</a>.)</li>
+				<li><a href="https://hmuehle.github.io/docs/sage/sperner.sage" target="blank">sperner.sage</a> - provides functions to import noncrossing partition lattices to Sage, and some test routines revolving around the Sperner property. (Accompanies my article on <a href="http://arxiv.org/abs/1509.06942" target="blank">symmetric decompositions of noncrossing partition lattices</a>.)</li>
+				<li><a href="https://hmuehle.github.io/docs/sage/m_tamari_decomposition.sage" target="blank">m_tamari_decomposition.sage</a> - provides functions to perform the strip decomposition of m-Dyck paths, and some test routines revolving around a conjecture that the m-Tamari lattice of parameter n is isomorphic to a modification of the poset of strip-decomposed m-Dyck paths under componentwise rotation order. (Accompanies my article with M. Kallipoliti on <a href="http://arxiv.org/abs/1312.2520" target="blank">m-cover posets</a>.)</li>
+			</ul>
+
+		<h2>Gap3 Scripts</h2>
+			<ul class="list-highlight">
+				<li><a href="https://hmuehle.github.io/docs/gap/print_nc.gap" target="blank">print_nc.gap</a> - provides functions to print the cover relations in a noncrossing partition lattice associated with any irreducible well-generated complex reflection group.</li>
+			</ul>
+
+		<h2>Some Lattice Repositories</h2>
+			<ul class="list-highlight">
+				<li><a href="https://hmuehle.github.io/docs/gap/ncp.zip" class="download-link">ncp.zip</a> - this is an archive containing a few noncrossing partition lattices. More precisely, the files in this archive contain the cover relations of these lattices. So far, I have included all noncrossing partition lattices associated with:
+
+				<ul class="list-highlight">
+					<li>real reflection groups of rank at most 8,</li>
+					<li>irreducible well-generated exceptional non-real complex reflection groups,</li>
+					<li>the groups G(d,d,n) for 3 ≤ d ≤ 8 and 3 ≤ n ≤ 6, as well as 3 ≤ d ≤ 6 and n=7.</li>
+				</ul>
+				</li>
+				<li><a href="https://hmuehle.github.io/docs/sage/lattices.zip" class="download-link">lattices.zip</a> - this is an archive containing certain families of lattices. So far, I have included all:
+				<ul class="list-highlight">
+					<li>distributive lattices of size ≤18</li>
+					<li>congruence-uniform lattices of size ≤13</li>
+					<li>extremal lattices of size ≤12</li>
+					<li>left-modular lattices of size ≤12</li>
+					<li>trim lattices of size ≤12</li>
+					<li>join-semidistributive lattices of size ≤12</li>
+				</ul>
+				</li>
+			</ul>
+
+			<p>This archive also contains a script called init.sage that allows for importing these lattices into Sage. Just load said script into Sage, and call the function load_all(type), where the parameter 'type' may be either one of: 'distributive', 'congruence_uniform', 'extremal', left_modular', 'trim', 'join_semidistributive', depending on which class of lattices you want to load. This function returns a dictionary that maps an integer to a list of all lattices of this cardinality. (Of course only if the lattices of the requested type and cardinality are contained in the archive.)</p>
+		</div>
+	</td></tr></table></div>
+	</body>
+</html>
